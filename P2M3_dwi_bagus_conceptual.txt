@@ -1,0 +1,38 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+NoSQL adalah database yang bersifat non tabular dan penyimpanan datanya berbeda dengan relasianal tabel. NoSQL memiliki struktur data yang fleksibel dan sering digunakan untuk data yang bersifat semi-struktur atau tidak terstruktur. Biasanya data terdiri dari dokumen, key-value, wide-column dan grafik
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+    Kapan menggunakan NoSQL:
+    1. data berskala beser
+    2. data semi struktur atau tidak terstruktur
+    3. dibutuhkan untuk skala arsitektur
+    4. jika memerlukan fleksibelitas skema
+    5. biasanya digunakan pada stream data
+
+    Kapan menggunakan RDBMS:
+    1. data yang disimpan terstruktur
+    2. terdapat transaksi yang kompleks
+    3. jika memerlukan fleksibelitas dalam query
+    4. biasanya digunakan pada batch data 
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+    1. MongoDB
+        - membuat database fleksibel dan sangat skalabel
+        - kecepatan tinggi
+        - kompatible dengan data yang besar
+        - menyediakan pengindeksan dan real-time agregasi untuk menganalisa dan mengakses data
+    2. Apache Cassandra
+        - gratis
+        - Cassandra dapat dengan mudah menangani beban kerja yang besar dengan menambahkan node ke dalam cluster
+        - Memberikan tingkat ketersediaan yang tinggi dengan replikasi data secara otomatis di seluruh cluster
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+    Airflow adalah sebuah platform untuk mendefinisikan, menjadwalkan dan memonitroing alur kerja berbasis python untuk memproses data
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+    Great Expectations adalah library dari python untuk mendefinisikan, mengelola, dan memvalidasi ekspetasi/kriteria/aturan dari suatu data 
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+    Batch Processing adalah pemrosesan serangkaian program atau pekerjaan pada satu atau lebih komputer tanpa intervensi manual, biasa digunakan untuk mengumpulkan dan penyimpan data berskala besar dan berdasarkan interval waktu tertentu
+    contoh digunakan dalam  pengumpulan dan pengolahan data penjualan harian pada perusahaan ritel
+    tools yang digunakan dalam batch processing: Apahce spark, AWS Glue dll

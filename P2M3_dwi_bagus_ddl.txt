@@ -1,0 +1,36 @@
+URL dataset:
+https://www.kaggle.com/datasets/missionjee/car-sales-report
+
+--------------------
+---------DDL--------
+--------------------
+
+----- CREATE TABLE -----
+CREATE TABLE table_m3 (
+	"Car_id" VARCHAR(14) PRIMARY KEY,
+	"Date" VARCHAR(10),
+	"Customer Name" VARCHAR(30),
+	"Gender" VARCHAR(6),
+	"Annual Income" INT,
+	"Dealer_Name" VARCHAR(50),
+	"Company" VARCHAR(50),
+	"Model" VARCHAR(30),
+	"Engine" VARCHAR(50),
+	"Transmission" VARCHAR(6),
+	"Color" VARCHAR(15),
+	"Price ($)" INT,
+	"Dealer_No " VARCHAR(10),
+	"Body Style" VARCHAR(10),
+	"Phone" VARCHAR(7),
+	"Dealer_Region" VARCHAR(15)
+);
+
+----------------------
+---------DML----------
+----------------------
+
+-- Insert data from csv file to table_m3 --
+COPY table_m3
+FROM 'D:\Download\Compressed\P2M3_dwi_bagus_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
